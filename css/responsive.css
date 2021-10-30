@@ -1,0 +1,301 @@
+/* Mobile View */
+@media screen and (max-width:480px) {
+
+    /* welcome-responsive */
+    .welcome {
+        width: 90%;
+        padding: 0 10px 0 10px;
+    }
+
+    /* centering-responsive */
+    .centering h2 {
+        text-align: center;
+    }
+
+    .restaurant-links {
+        flex-wrap: wrap;
+    }
+
+    .restaurant-links a {
+        margin: 0 auto;
+    }
+
+    .restaurant-links img {
+        width: 100%;
+        height: auto;
+        padding: 0 10px 0 10px;
+    }
+
+    /* about responsive */
+    .about-child,
+    .about-child h3,
+    .about-child h1 {
+    text-align: center;
+    }
+
+    /*popular restaurants responsive */
+    #services {
+        flex-wrap: wrap;
+    }
+
+    #services .box {
+        width: 300px;
+    }
+    /* our gallery responsive */
+    .head-para {
+        width: 100%;
+        padding: 0 10px 0 10px;
+    }
+
+    .head-text {
+        line-height: 1.6rem;
+        word-spacing: 1px;
+    }
+    .Menu1 ul li {
+        padding:0 8px 0 8px;
+    }
+    #image1 img,#image img,#image2 img,#image3 img{
+        width:100%;
+        height:auto;
+    }
+    /* blog responsive*/
+    .teams .carousel .card {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    .teams .carousel .card img {
+        width: 100%;
+        height: auto;
+    }
+    /* feedback responsive */
+    .feed-head{
+        padding:15px 10px 0 10px;
+        font-size:2.5rem;
+    }
+    .user h3{
+        font-size: 15px;
+    }
+    
+    .user p{
+        font-size: 12px;
+        line-height:20px;
+    }
+    .view-box{
+        width:90%;
+        margin:-50px auto;
+        border-radius:0;
+    }   
+    .user p::before, .user p::after{
+        display: none;
+    }
+    /* footer responsive */
+    .footer-col {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+    .footer-text,
+    .footer-text1,
+    .footer-text2,
+    .footer-icon {
+        text-align: center;
+    }
+
+    .table-text table,
+    .btn1 {
+        margin: 0 auto;
+    }
+
+    .button1 {
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width:481px) and (max-width:800px){
+    /* welcome-responsive */
+    .welcome{
+        width:80%;
+    }
+    /*popular restaurants responsive */
+    #services{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    #services .box{
+        width:400px;
+    }
+    /* centering */
+    .restaurant-links{
+        display: flex; 
+        justify-content:center;
+    }
+    .restaurant-links img{
+        width:100%;
+        height:auto;
+    }
+    #image1 img,#image img,#image2 img,#image3 img{
+        width:100%;
+        height:auto;
+    }
+    .Menu1 ul li{
+        padding:0 20px 0 20px;
+    }
+     /* blog responsive*/
+    .teams .carousel .card {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    .teams .carousel .card img {
+        width: 100%;
+        height: auto;
+    }
+    .teams .carousel .card .box{
+        height:380px;
+    }
+    .user h3{
+        font-size: 20px;
+    }
+    
+    .user p{
+        font-size: 18px;
+    }
+    .view-box{
+        width:92%;
+        border-radius:0;
+    }
+    .user p::before, .user p::after{
+        display: none;
+    }
+    .footer-col {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+    .footer-text,
+    .footer-text1,
+    .footer-text2,
+    .footer-icon {
+        text-align: center;
+    }
+
+    .table-text table,
+    .btn1 {
+        margin: 0 auto;
+    }
+
+    .button1 {
+        width: 100%;
+    }
+}
+@media screen and (min-width:801px) and (max-width:1280px){
+    .restaurant-links{
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content:space-evenly;
+    }
+    .restaurant-links img{
+        width:100%;
+        height:auto;
+    }
+    #services{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+
+    }
+    #services .box{
+        width:250px;
+        margin:40px 0 0 0;
+    }
+    
+    .teams .carousel .card {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+    .teams .carousel .card img {
+        width: 100%;
+        height: auto;
+    }
+    .teams .carousel .card .box{
+        height:420px;
+    }
+    .view-box{
+        width:100%;
+        border-radius:0;    
+    }
+    .user{
+        border-radius:10px 20px 10px 20px;
+    }
+}
+/* Momo Restaurant responsive */
+@media(max-width:800px){
+    .res-delivery{
+      display: block;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      border-top: dotted 1px black ;
+      border-bottom: dotted 1px black;  
+    }
+    .dish p:first-child{
+      font-size: 1rem;
+    }
+   
+    .userinfo p{
+      font-size: 0.9rem;
+    }
+    .userinfo input{
+      height: 1.5rem;
+      width:60%;
+    }
+    .place-order{
+      margin-top:3%;
+      height:1.8rem;
+      width:60%;
+      font-size: 0.9rem;
+      background-color: #f51f1f;
+      border-radius: 0.3rem;
+      border:none;
+      cursor: pointer;
+    }
+    .personal-info{
+      width:70%;
+    }
+  }
+  @media(max-width:470px){
+    .restaurant-info{
+      display: block;
+    }
+    .restaurant-info p{
+      font-size:0.9rem;
+    }
+    .restaurant-to-home{
+      display: none;
+    }
+  }
+
+ /*******************************/
+ .btnm{
+    display: none;
+    margin-right:0px;
+ }
+ .add-item{
+   margin-left: 350px;
+ }
+ #ans{
+   font-weight: bolder;
+ }
+

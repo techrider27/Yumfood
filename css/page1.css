@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+body{
+    background: url('../images/page1bg.jpg');
+    background-size: cover;
+    font-family: 'Signika', sans-serif;
+}
+
+.restaurant{
+    margin:auto;
+    margin:20px 250px;
+    background-color:rgb(252, 249, 249);
+}
+.restaurant_heading h1{
+    font-size: 3rem;
+}
+.restaurant_heading .address{
+    font-size: 22px;
+    margin-top: 0px;
+    color: rgb(153, 149, 149);
+}
+.restaurant_heading,.pizza{
+    float: left;
+}
+.time{
+    margin-left: 400px;
+}
+.restaurant_name{
+    margin-left: 20px;
+}
+.timee{
+    height: 27px;
+    width:50px;
+    margin-top: 10px;
+}
+p{
+    font-size: 22px;
+    font-weight: 600;
+}
+.rating{
+    border:0px;
+    border-radius: 5px; 
+    margin-top: 5px;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+}  
+.pizza_dish{
+    margin: 35px 0px 20px 30px;
+}
+.pizza1 img{
+    border-radius: 10px;
+}
+.pizza2{
+     margin-left: 25px;
+}
+.pizza2 p{
+    margin-top: 10px;
+    font-size: large;
+}
+.pizza .star1{
+    color: rgb(247, 194, 60);
+}
+.pizza .star2{
+    color: lightgrey;
+}
+.pizza3{
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.add,.btnm{
+    height:35px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.btnm{
+    display: none;
+}
+.ad{
+    margin-left: 515px;
+}
+.last{
+    margin:20px 0px 30px 30px;
+}
+.check1{
+    margin-left: 40px;
+}
+.check2{
+    margin-left: 115px;
+}
+.extra{
+    float: left;
+}
+.extra1{
+    margin-left: 250px;
+}
+.txt,.btn{
+    margin-bottom:20px;
+    height: 30px;
+    width: 300px;
+    border-radius: 8px;
+}
+::placeholder{
+    font-size: 18px;
+    padding: 4px;
+}
+.btn{
+    background-color: #2a7588;
+    color: white;
+    font-size: 18px;
+}
+#ans{
+    width: 250px;
+    margin: auto;
+}
+.b{
+    float: left;
+    margin-left: 10px;
+}

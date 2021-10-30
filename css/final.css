@@ -1,0 +1,1151 @@
+/* @Priyanshu */
+/*----------------landing--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    object-fit: cover;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Molengo', sans-serif, 'Times New Roman', Times, serif;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.landing {
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+    animation: animate 16s ease infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        background: url("../images/Home-image.jpg");
+        background-size: cover;
+    }
+
+    25% {
+        background: url("../images/food.jpg");
+        background-size: cover;
+    }
+
+    50% {
+        background: url("../images/buffet.jpg");
+        background-size: cover;
+    }
+
+    75% {
+        background: url("../images/wine.jpg");
+        background-size: cover;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(80, 78, 78);
+    height: 8vh;
+    opacity: 0.8;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 0 2rem;
+}
+
+.header h2 a,
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    padding: 0 2rem;
+    align-self: center;
+    font-family: 'Dancing script';
+}
+
+.fa-bars,
+.fa-times {
+    color: white;
+}
+
+.openmenu {
+    font-size: 1.3rem;
+    margin: 1.3rem;
+    display: none;
+    cursor: pointer;
+}
+
+.closemenu {
+    font-size: 1.3rem;
+    display: none;
+    cursor: pointer;
+}
+
+.links {
+    padding-top: 1rem;
+}
+
+/* media query for navbar */
+@media(max-width:800px) {
+    header .links {
+        height: 20vh;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(80, 78, 78);
+        transition: top 0.5s ease;
+        display: none;
+    }
+
+    header .links .closemenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header .openmenu {
+        display: block;
+        color: white;
+    }
+
+    header .links li {
+        margin: 3px 0px;
+    }
+
+    header .links li a:hover {
+        background: none;
+        color: rgb(194, 132, 39);
+        font-size: 1.5rem;
+        padding: 25px 0px;
+    }
+
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 50%;
+    margin: auto;
+    margin-top: 210px;
+    background-color: rgb(207, 204, 204);
+    opacity: 0.9;
+}
+
+.read {
+    width: auto;
+    margin: 10px;
+    color: white;
+    opacity: 0.9;
+    background-color: tomato;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.welcome-txt {
+    font-family: 'dancing script';
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.welcome h3 {
+    font-size: 1.2rem;
+    font-family: 'Molengo', Arial;
+    text-align: center;
+}
+
+.highlight {
+    color: tomato;
+    font-weight: 100;
+}
+
+.description {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Molengo', Arial;
+}
+
+.welcome button a {
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:686px) {
+    .welcome {
+        font-size: 0.9rem;
+    }
+
+    .welcome h3 {
+        margin: 4px;
+    }
+}
+
+/* restaurant-thumb-images */
+.centering {
+    padding: 4rem 4rem 0rem 4rem;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background: rgb(230, 242, 250); */
+}
+
+.centering h2 {
+    font-weight: 700;
+    font-family: 'Dancing Script';
+    font-size: 3rem;
+}
+
+.restaurant-links {
+    display: flex;
+    margin: 3rem 0rem 2rem 0rem;
+    flex-wrap: wrap;
+}
+
+.restaurant-links a {
+    margin: 0 2rem;
+}
+
+.restaurant-links a img {
+    height: 80%;
+    width: 20rem;
+    border-radius: 0.5rem;
+}
+
+/* restaurant links */
+
+/* .restaurant-page-1 {
+    min-height: 100vh;
+    background: url("../images/Restaurant1.jpg");
+    background-size: cover;
+}
+
+.restaurant-page-2 {
+    min-height: 100vh;
+    background: url("../images/Restaurant2.jpg");
+    background-size: cover;
+}
+
+.restaurant-page-3 {
+    min-height: 100vh;
+    background: url("../images/Restaurant3.jpg");
+    background-size: cover;
+} */
+
+/* .restaurant-page-4 {
+    min-height: 100vh;
+    background: url("../images/Restaurant4.jpg");
+    background-size: cover;
+}
+
+.restaurant-to-home {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.restaurant-to-home a {
+    margin-top: 1rem;
+    color: black;
+    font-size: 1.7rem;
+}
+
+.restaurant-menu {
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    margin: auto;
+    margin-top: 4%;
+    padding: 1rem;
+    color: black;
+}
+
+.heading-p {
+    font-family: 'Dancing script';
+}
+
+.restaurant-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.res-delivery {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    width: 100%;
+    margin: auto;
+    border-top: dotted 1px black;
+    border-bottom: dotted 1px black;
+}
+
+.res-dishes {
+    margin-top: 3rem;
+}
+
+.dish {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+    margin: 10px;
+    height: 8vh;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+
+}
+
+.dish p:first-child {
+    font-size: 1.3rem;
+    width: 22%;
+}
+
+.dish button {
+    border: none;
+    background: rgba(50, 55, 55, 0.4);
+    border-radius: 5px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+} */
+.restaurant-links a img:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.restaurant-page-4 {
+    min-height: 100vh;
+    background-image: url(../images/Restaurant4.jpg);
+    background-size: cover;
+}
+
+.restaurant-to-home a {
+    display: inline-block;
+    color: black;
+    font-size: 1.6rem;
+    padding-top: 0.2rem;
+}
+
+.restaurant-menu {
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    color: black;
+    margin: auto;
+    padding: 5% 10%;
+}
+
+.ordering-section {
+    width: 80%;
+    margin: auto;
+}
+
+.personal-info {
+    padding: 0.5rem;
+    font-family: 'Molengo', Arial;
+    margin: auto;
+    padding-top: 1rem;
+    width: 50%;
+}
+
+.userinfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.8rem 0rem;
+}
+
+.userinfo p {
+    font-size: 1.1rem;
+}
+
+.userinfo input {
+    height: 1.5rem;
+    width: 60%;
+}
+
+.place-order {
+    margin-top: 3%;
+    height: 1.8rem;
+    width: 40%;
+    font-size: 1.1rem;
+    background-color: #f51f1f;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.place-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centering-p-info {
+    width: 80%;
+    margin: auto;
+}
+
+
+.heading-p {
+    font-family: 'Dancing script';
+}
+
+.restaurant-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.res-delivery {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    width: 100%;
+    margin: auto;
+    border-top: dotted 1px black;
+    border-bottom: dotted 1px black;
+}
+
+.res-dishes {
+    margin-top: 3rem;
+}
+
+.dish {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+    margin: 10px;
+    height: 8vh;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+
+}
+
+.dish p:first-child {
+    font-size: 1.2rem;
+    width: 40%;
+}
+
+.dish button {
+    border: none;
+    background: rgba(50, 55, 55, 0.4);
+    border-radius: 5px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/*---------------about-section css------------*/
+.section-about {
+    margin: 3rem;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1.25rem 0 1.25rem;
+}
+
+.about-child {
+    width: 37.5rem;
+    margin: 1.25rem 0 0 0;
+    padding: 0 0 1rem 0;
+}
+
+.about-child h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 0 0 0.62rem 0;
+    text-align: justify;
+}
+
+.about-child h3 {
+    font-family: 'Molengo', sans-serif;
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 0 0 1.25rem 0;
+}
+
+.about-child p {
+    font-family: 'Molengo', sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 0 0 1.25rem 0;
+}
+
+.about-child-1 {
+    width: 23.75rem;
+    padding: 1rem 0 0 0;
+}
+
+.about-child-1 img {
+    width: 100%;
+    height: auto;
+}
+
+.about-child a {
+    text-decoration: none;
+    background-color: #f82d2d;
+    color: white;
+    padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+    font-family: 'Molengo', sans-serif;
+}
+
+.about-child a:hover {
+    background-color: #1e90ff;
+    color: black;
+    transition: 0.3s ease;
+}
+
+/* ------------------------------------------------------------*/
+/*--------------------Popular Restaurants Section--------*/
+
+#services-container {
+    background-color: rgb(233, 244, 248);
+    margin: 3rem 0rem;
+    height: auto;
+    padding: 1rem;
+}
+
+#services-container h1 {
+    font-family: 'Dancing script';
+}
+
+#services {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#services .box {
+    border: 1px solid rgb(199, 54, 54);
+    padding: 20px;
+    margin: 1px 13px;
+    border-radius: 23px;
+    background: #f2f2f2;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 210px;
+    justify-content: center;
+    align-items: center;
+}
+
+#services .box img {
+    height: 80px;
+    width: 100px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+
+}
+
+.h-primary {
+    font-family: 'Bree Seri', serif;
+    font-size: 3.5rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    padding: 8px;
+}
+
+.btn {
+    /* padding: 5px; */
+    margin: auto;
+    font-family: 'Moleng', Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(25deg, #7197cf, #6075df);
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.btn a {
+    text-decoration: none;
+    text-decoration-color: white;
+    color: white;
+}
+
+.btn a:hover {
+    color: rgb(58, 56, 56);
+}
+
+.btn:hover {
+    box-shadow: #000 -1px 1px #000 -2px 2px #000 -3px 3px #000 -4px 4px #000 -5px 5px;
+    transform: translate3d(4px, -4px, 0);
+    color: blue;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+.center {
+    text-align: center;
+}
+
+/* ------------------------------------------------------------ */
+/*-------------------Our Gallery Section--------------*/
+.head {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.gallery-container {
+    margin: 3rem;
+}
+
+.gallery {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: black;
+    font-family: 'Dancing script';
+}
+
+.head-para {
+    text-align: center;
+    margin: 1rem auto;
+    width: 70%;
+}
+
+.head-text {
+    font-weight: 200;
+    font-family: 'Molengo', sans-serif;
+    ;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: lighter;
+    word-spacing: 2px;
+    line-height: 1.5;
+    padding: 4px;
+}
+
+.Menu {
+    margin: 0.5rem auto 1.5rem auto;
+    border: 1px solid black;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0px 0px 6px 2px grey;
+
+}
+
+.Menu1 button {
+    height: fit-content;
+    width: fit-content;
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.Menu1 {
+    width: 100%;
+    height: 100%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 0px;
+    display: flex;
+
+}
+
+.menu-list {
+    margin-top: 8px;
+    margin-bottom: 12px;
+
+}
+
+.Menu ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.Menu ul li button:hover {
+    color: red;
+}
+
+#image1,
+#image2,
+#image3 {
+    display: none;
+}
+
+#image1 img,
+#image img,
+#image2 img,
+#image3 img {
+    height: 16em;
+    width: 90%;
+    box-shadow: 0px 0px 6px 2px gray;
+}
+
+#image1 a:hover img,
+#image3 a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 6px 4px skyblue;
+}
+
+#image a:hover img,
+#image2 a:hover img {
+    transform: scale(1.1);
+}
+
+.image-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* ---------------------------------------------------------*/
+/*-----------------Blog + Feedback Section------------------*/
+.feedback {
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(247, 249, 250);
+    position: relative;
+}
+
+.feed-head {
+    padding: 2rem;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Molengo', arial;
+}
+
+.feedback p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.feedback span {
+    color: red;
+}
+
+/* #feed{
+    margin-left: 30%;
+} */
+
+.view-box {
+    width: 68%;
+    height: 400px;
+    border-radius: 20%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 30%;
+}
+
+#testimonial {
+    display: flex;
+    transition: 0.5s;
+}
+
+.user {
+    width: 800px;
+    text-align: center;
+    box-sizing: border-box;
+    background: rgb(149, 77, 151);
+    box-shadow: 0 10px 20px -5px #00000061;
+    position: relative;
+}
+
+
+.space {
+    margin: 0 70px;
+}
+
+.change {
+    margin-left: 870px !important;
+}
+
+.user img {
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.user img:hover {
+    position: absolute !important;
+    transform: scale(1.8) !important;
+    background: rgb(116, 20, 39) !important;
+    border-color: rgb(21, 21, 31) !important;
+    cursor: pointer;
+
+}
+
+.user h3 {
+    color: black !important;
+}
+
+.user p {
+    font-size: 22px;
+    color: #cbb4f5;
+    line-height: 32px;
+    margin: 60px 0 30px;
+
+}
+
+.user p::before {
+    content: '\201C';
+    font-size: 80px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -57%;
+    margin-right: 10px;
+}
+
+.user p::after {
+    content: '\201D';
+    font-size: 80px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -100%;
+    margin-left: 10px;
+}
+
+.user h3 {
+    font-size: 26px;
+    color: #cbb4f5;
+}
+
+.control {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.control span {
+    width: 15px;
+    height: 15px;
+    background: #321764;
+    border-radius: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.active1 {
+    width: 45px !important;
+}
+
+/* Blog */
+
+.teams {
+    margin: 4rem auto 0rem auto;
+    padding: 2rem;
+    background: rgb(227, 243, 250);
+    height: auto;
+
+}
+
+.teams .title {
+    color: brown;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.teams .subheading {
+    color: rgb(117, 49, 49);
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 3%;
+}
+
+.teams .carousel .card {
+    background: rgb(240, 233, 233);
+    border-radius: 6px;
+    padding: 0px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 400px;
+    height: 530px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+
+.teams .carousel .card:hover {
+    background: rgb(201, 199, 199);
+}
+
+.teams .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease;
+}
+
+.teams .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.teams .carousel .card .text {
+    color: rgb(87, 4, 83);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card .content {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    text-align: left;
+}
+
+.teams .carousel .card img {
+    height: 350px;
+    width: 400px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    /* border: 1px solid rgb(224, 5, 159); */
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img {
+    border-color: rgb(9, 5, 235);
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid rgb(116, 20, 39) !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: rgb(116, 20, 39) !important;
+}
+
+/* ------------------------------------------------------------ */
+/*----------------------------------Footer ------------------*/
+.container1 {
+    background-color: #24262b;
+    width: 100%;
+    height: 40%;
+    padding: 1rem;
+    font-family: Arial;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-col {
+    padding: 1rem;
+    color: white;
+    width: 24%;
+    margin: 4px;
+}
+
+.footer-head a {
+    /* text-decoration: underline rgb(177, 172, 172); */
+    text-decoration: underline red;
+    padding-bottom: 4px;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: white;
+
+}
+
+.footer-head a:hover {
+    transition: all 0.3s ease;
+    font-size: 22px;
+
+}
+
+.footer-text {
+    padding: 6px;
+    margin: 4px;
+    word-spacing: 1px;
+    line-height: 1.5;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-family: serif;
+    text-align: left;
+
+}
+
+.footer-icon {
+    margin: 4px;
+    margin-left: 0px;
+    margin-top: 4px;
+    text-align: left;
+}
+
+.footer-icon a i {
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.footer-icon a:hover i {
+    background-color: rgb(123, 123, 172);
+    color: white;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+.table-text {
+    padding: 6px;
+    word-spacing: 1px;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 0px;
+    font-family: serif;
+}
+
+.btn1 {
+    padding: 4px;
+    background-color: rgb(56, 170, 56);
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+    color: honeydew;
+}
+
+.footer-text1 {
+    padding: 6px;
+    margin: 3px;
+    word-spacing: 1.5;
+    line-height: 1.5;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-family: serif;
+    text-align: left;
+}
+
+.table-text table th {
+    padding: 3px;
+    text-align: left;
+
+}
+
+.table-text table td {
+    padding: 3px;
+    margin-left: 3px;
+}
+
+.footer-text2 {
+    margin-bottom: 1rem;
+}
+
+.footer-text2 input {
+    padding: 0.2rem;
+    width: 90%;
+    font-size: 17px;
+
+}
+
+.button1 {
+    width: 70%;
+}
+
+.btn1:hover {
+    transition: all 0.3s ease;
+    background-color: rgb(22, 100, 22);
+    font-size: 1rem;
+    color: white;
+    font-family: cursive;
+}
