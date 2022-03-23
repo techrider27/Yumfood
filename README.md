@@ -1,6 +1,6 @@
 # Yumfood
 SSJ IT Solutions Pvt. Ltd.
-FrontEnd Development task
+Front-End Development task
 # Team -
 Riya Varshney<br>
 Priyanshu Bhardwaj<br>
